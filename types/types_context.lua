@@ -31,6 +31,7 @@ menuStack = {}
 ---@class Context
 ---@field id string -- The unique ID of the context.
 ---@field title string -- The title of the context.
+---@field onBack fun():void|nil -- Triggered when You back at previous Page.
 ---@field enableCloseButton boolean -- Whether the close button is enabled.
 ---@field options Option[] -- List of menu options for this context.
 ---@return id 
