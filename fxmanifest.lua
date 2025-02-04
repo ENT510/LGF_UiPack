@@ -3,7 +3,7 @@ game 'gta5'
 author 'ENT510'
 version '1.0.0'
 lua54 'yes'
-
+description "ui Library standalone"
 
 shared_scripts {
     "@ox_lib/init.lua",
@@ -19,9 +19,7 @@ client_scripts {
     'modules/client/textui/*.lua',
 }
 
-server_scripts {
-    'modules/server/sv-callback.lua',
-}
+
 
 files { 'web/build/index.html', 'web/build/**/*', }
 ui_page 'web/build/index.html'

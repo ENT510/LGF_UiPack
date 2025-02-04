@@ -1,7 +1,7 @@
 Client                         = {}
 
 LocalPlayer.state.contextBusy  = false
-LocalPlayer.state.contextBusy  = false
+LocalPlayer.state.alertBusy  = false
 LocalPlayer.state.textuiBusy   = false
 
 local isScreenBlurActive       = false
