@@ -9,3 +9,7 @@ function Shared.debug(type, ...)
         warn(...)
     end
 end
+
+if IsDuplicityVersion() then
+    lib.versionCheck('ENT510/LGF_UiPack')
+end
