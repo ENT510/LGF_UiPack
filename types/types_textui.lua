@@ -1,6 +1,6 @@
 ---@meta
 
----@class TextUIContext
+---@class TextUI
 ---@field id string -- The unique ID of the TextUI context.
 ---@field title string -- The title of the TextUI.
 ---@field message string -- The message content of the TextUI.
