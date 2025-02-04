@@ -75,3 +75,29 @@ Get the state of the TextUi
 LocalPlayer.state.textuiBusy
 ```
 
+# Alert
+
+### Register Context 
+Register a new menu `alert` with options.
+
+```lua
+---@param data table[] 
+---@return promise <void>  true | false
+exports.LGF_UiPack:registerAlert(data)
+```
+
+### Register Context 
+Force a close of the current `alert` opened.
+
+```lua
+exports.LGF_UiPack:closeAlert()
+```
+
+### Get The local state of the alert
+Get the state of the alert
+
+```lua
+---@return <boolean> true | false
+LocalPlayer.state.alertBusy
+```
+
