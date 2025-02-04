@@ -32,9 +32,10 @@ const TextUI: React.FC<TextUiProps> = ({ Display, textUi }) => {
         opacity: positionStyles.opacity,
         zIndex: 9999,
         transition: `all 0.5s ease`,
+        border: "1px solid rgba(31, 41, 55, 0.4)",
         backgroundColor: textUi.backgroundColor || "#212529",
         transform: "translateY(-50%)",
-        borderRadius:"6px",
+        borderRadius:"8px",
       }}
     >
       <Container className="text-ui-container">
@@ -45,7 +46,7 @@ const TextUI: React.FC<TextUiProps> = ({ Display, textUi }) => {
             size={40}
               style={{
                 backgroundColor: "rgba(54, 156, 129, 0.3)",
-                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.3)"
+                boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.2)"
               }}
             >
               <Text size={24} weight={500} color="white">
@@ -54,7 +55,7 @@ const TextUI: React.FC<TextUiProps> = ({ Display, textUi }) => {
             </Avatar>
 
             <Flex justify="flex-start" align="flex-start" direction="column">
-              <Title order={4} tt="uppercase">
+              <Title order={5} tt="uppercase">
                 {textUi.title}
               </Title>
               <Text size="sm" color="gray.5">

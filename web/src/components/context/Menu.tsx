@@ -31,24 +31,24 @@ interface MenuProps {
 const useStyles = createStyles((theme) => ({ 
   container: { 
     position: "relative", 
-    backgroundColor: "rgba(26, 30, 35, 0.704)", 
-    border: "2px solid rgba(168, 177, 174, 0.3)" 
+    marginBottom:8
+
   }, 
-  menuTitle: { 
-    fontWeight: 700, 
+    menuTitle: { 
     textTransform: "uppercase", 
     color: theme.colors.dark[0], 
     letterSpacing: "1px", 
-    padding: "10px 20px", 
-    backgroundColor: "rgba(26, 30, 35, 0.904)", 
+
     boxShadow: "0px 2px 5px rgba(0, 0, 0, 0.1)", 
     display: "flex", 
     justifyContent: "space-between", 
-    alignItems: "center" 
+    alignItems: "center", 
+    height:25,
+   
   }, 
   backButton: { 
     position: "absolute", 
-    top: 9, 
+
     height: 20, 
     right: 60, 
     padding: "6px 10px", 
@@ -63,7 +63,7 @@ const useStyles = createStyles((theme) => ({
   }, 
   closeButton: { 
     position: "absolute", 
-    top: 9, 
+
     right: 14, 
     height: 20, 
     padding: "6px 10px", 
@@ -122,7 +122,7 @@ const Interaction: React.FC<MenuProps> = ({ Display, menu }) => {
         </Tooltip>
 
         <div className={classes.menuTitle}>
-          <Title style={{ fontSize: "24px" }} tt="uppercase">{menu.title}</Title>
+          <Title order={3} tt="uppercase">{menu.title}</Title>
         </div>
       </div>
 
