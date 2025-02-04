@@ -1,19 +1,8 @@
-# LGF Ui Pack
+# LGF Ui Pack (Standalone)
 
 Modern `standalone` UI pack written in **TypeScript** designed to create and manage various user interface elements for **FiveM** servers. This pack provides flexible and efficient solutions to integrate UI components into your FiveM projects.
 
-## Context Menu
-
-<table>
-  <tr>
-    <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/6cf634a1-7862-4726-85f4-893a2efdce51" style="width: 250px; height: 250px;">
-    </td>
-    <td style="text-align: center;">
-      <img src="https://github.com/user-attachments/assets/95ac9bc4-14e9-487c-99d6-fd5743735cfc" style="width: 250px; height: 250px;">
-    </td>
-  </tr>
-</table>
+# Context Menu
 
 ### Register Context 
 Register a new menu `context` with options.
@@ -48,7 +37,7 @@ Retrieve the current `id` of the `context` menu that is currently opened.
 exports.LGF_UiPack:getActiveContextMenu()
 ```
 
-### Get The local state 
+### Get The local state of Context
 Get the state of the context independently from the `id`
 
 ```lua
@@ -56,4 +45,29 @@ Get the state of the context independently from the `id`
 LocalPlayer.state.contextBusy
 ```
 
+## Text UI
+
+### Display a TextUI 
+Display a textui with correct options
+
+```lua
+---@param data table[] 
+exports.LGF_UiPack:showTextUi(data)
+```
+
+### Hide a TextUI 
+Hide the current Textui Active
+
+```lua
+---@param data table[] 
+exports.LGF_UiPack:hideTextUi()
+```
+
+### Get The local state of Textui
+Get the state of the TextUi
+
+```lua
+---@return <boolean> true | false
+LocalPlayer.state.textuiBusy
+```
 
