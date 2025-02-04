@@ -1,3 +1,7 @@
+![GitHub Downloads](https://img.shields.io/github/downloads/ENT510/LGF_UiPack/total?logo=github)
+![GitHub Release](https://img.shields.io/github/v/release/ENT510/LGF_UiPack?logo=github)
+
+
 # LGF Ui Pack (Standalone)
 
 Modern `standalone` UI pack written in **TypeScript** designed to create and manage various user interface elements for **FiveM** servers. This pack provides flexible and efficient solutions to integrate UI components into your FiveM projects.
