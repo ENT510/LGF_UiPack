@@ -50,7 +50,7 @@ const useStyles = createStyles((theme) => ({
     position: "absolute", 
 
     height: 20, 
-    right: 60, 
+    right: 45, 
     padding: "6px 10px", 
     backgroundColor: "rgba(54, 156, 129, 0.202)", 
     borderRadius: "3px", 
@@ -64,7 +64,7 @@ const useStyles = createStyles((theme) => ({
   closeButton: { 
     position: "absolute", 
 
-    right: 14, 
+    right: 0, 
     height: 20, 
     padding: "6px 10px", 
     backgroundColor: "rgba(255, 34, 0, 0.202)", 
