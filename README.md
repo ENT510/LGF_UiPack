@@ -44,7 +44,7 @@ exports.LGF_UiPack:hideContextMenu()
 Retrieve the current `id` of the `context` menu that is currently opened.
 
 ```lua
----#return id <string>
+---@return id <string>
 exports.LGF_UiPack:getActiveContextMenu()
 ```
 
