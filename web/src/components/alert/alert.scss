@@ -1,0 +1,50 @@
+.Alert {
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+
+  padding: 12px;
+  width: auto;
+  max-width: 500px;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  opacity: 1;
+  z-index: 1050;
+  font-size: 0.9em;
+  transition: right 0.4s ease-in-out, opacity 0.4s ease-in-out, height 0.4s ease-in-out;
+  height: auto; 
+  background-color: rgb(30, 30, 35);
+  border: 2px solid rgba(90, 90, 90, 0.21);
+  position: relative;
+}
+
+.slide-in-alert {
+  right: 5%;
+  opacity: 1;
+}
+
+.slide-out-alert {
+  right: -500px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.alert-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  z-index: 1040;
+}
+
+.overlay-active {
+  opacity: 1; 
+}
+

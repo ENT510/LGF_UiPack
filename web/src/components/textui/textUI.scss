@@ -1,0 +1,35 @@
+.TextUI {
+    position: fixed;
+    top: 20%;
+    right: -500px;
+    opacity: 0;
+    z-index: 9999;
+    transition: right 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .slide-in-TextUI {
+    right: 5%;
+    opacity: 1;
+  }
+  
+  .slide-out-TextUI {
+    right: -500px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .text-ui-container {
+
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 300px;
+
+  }
+
+
+
+  
